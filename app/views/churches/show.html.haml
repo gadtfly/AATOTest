@@ -1,4 +1,8 @@
 .church
   %h1= @church.name
+  .denominations
+    = render partial: 'denomination', collection: @church.denomination_list
+  .tags
+    = render partial: 'tag', collection: @church.tag_list
   = link_to 'Edit', [:edit, @church]
   = link_to 'Destroy', @church, method: :delete

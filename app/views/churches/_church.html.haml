@@ -1,2 +1,4 @@
 .church
   %h2= link_to church.name, church
+  .denominations
+    = render partial: 'denomination', collection: church.denomination_list

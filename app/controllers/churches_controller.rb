@@ -45,6 +45,6 @@ private
   end
 
   def church_params
-    params.require(:church).permit(:name)
+    params.require(:church).permit(:name, :denomination_list, :tag_list)
   end
 end
