@@ -1,0 +1,10 @@
+= form_for church do |f|
+  - if church.errors.any?
+    %h2 Errors:
+    %ul
+      - church.errors.full_messages.each do |msg|
+        %li= msg
+
+  = f.label      :name
+  = f.text_field :name
+  = f.submit

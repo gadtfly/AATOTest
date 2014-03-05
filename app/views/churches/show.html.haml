@@ -1,0 +1,4 @@
+.church
+  %h1= @church.name
+  = link_to 'Edit', [:edit, @church]
+  = link_to 'Destroy', @church, method: :delete
